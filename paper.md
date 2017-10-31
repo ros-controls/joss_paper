@@ -12,7 +12,7 @@ tags:
   - hardware abstraction layer  
 authors:
  - name: Sachin Chitta
-   orcid: 0000-0000-0000-0000
+   orcid: 0000-0003-4859-6096
    affiliation: 9, 11
  - name: Wim Meeussen
    orcid: 0000-0003-1905-4001
