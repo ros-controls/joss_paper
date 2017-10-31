@@ -28,7 +28,7 @@ authors:
    affiliation: 8,10
  - name: Dave Coleman
    orcid: 0000-0001-6112-1795
-   affiliation: 3, 11?
+   affiliation: 3, 11
  - name: Bence Magyar
    orcid: 0000-0001-8455-8674
    affiliation: 4, 2
@@ -44,9 +44,9 @@ authors:
 affiliations:
  - name: hiDOF, Inc. (at the time of this work)
    index: 1
- - name: PAL Robotics
+ - name: PAL Robotics (at the time of this work)
    index: 2
- - name: ?
+ - name: PickNik Consulting
    index: 3
  - name: Heriot-Watt University, Edinburgh Centre for Robotics
    index: 4
@@ -65,9 +65,9 @@ affiliations:
  - name: Willow Garage Inc. (at the time of this work)
    index: 11
 date: 31 October 2017
+date: 14 February 2016
 bibliography: paper.bib
 ---
-
 # Summary
 
 A summary describing the high-level functionality and purpose of the software for a diverse, non-specialist audience
