@@ -20,7 +20,7 @@ authors:
  - name: Vijay Pradeep
    orcid: 0000-0002-8280-7275
    affiliation: 1
- - name: Adolfo Rodriguez Tsouroukdissian
+ - name: Adolfo Rodríguez Tsouroukdissian
    orcid: 0000-0002-3075-1329
    affiliation: 2
  - name: Jonathan Bohren
@@ -86,7 +86,7 @@ The repository `ros_controllers` holds several ready-made controllers supporting
 
 Finally, `control_msgs` provides ROS messages used in most controllers offered in `ros_controllers`.
 
-# Referenced
+# Robots using `ros_control`
 
 Being a mature framework `ros_control` is widely applied to both production and research platform robots. A few examples where the control system is implemented with `ros_control` are:
 - PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
@@ -101,8 +101,8 @@ Being a mature framework `ros_control` is widely applied to both production and 
 # Figures for overview
 ![ROS Control overview](images/ros_control_overview.png)
 
-The figures below are depicting parts of the system in more detail.
-![Fidgit deposited in figshare.](images/overview.svg)
+The figures below highlight parts of the system in more detail and were made originally for the ROSCon2014 talk [@roscon_adolfo]. 
+![Overview](images/overview.svg)
 ![Controllers overview](images/ros_control_interfaces.svg)
 ![Control loop](images/control_loop.svg)
 ![Controllers example](images/controllers.svg)
