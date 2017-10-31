@@ -1,5 +1,5 @@
 ---
-title: '`ros_control`: A generic and simple control framework for ROS'
+title: 'ros_control: A generic and simple control framework for ROS'
 tags:
   - ros
   - control
@@ -11,13 +11,13 @@ tags:
   - mobile robotics
   - hardware abstraction layer  
 authors:
- - Sachin Chitta
+ - name: Sachin Chitta
    orcid: 0000-0000-0000-0000
    affiliation: 9, 11
  - name: Wim Meeussen
    orcid: 0000-0003-1905-4001
    affiliation: 1
- - Vijay Pradeep
+ - name: Vijay Pradeep
    orcid: 0000-0002-8280-7275
    affiliation: 1
  - name: Adolfo Rodriguez Tsouroukdissian
