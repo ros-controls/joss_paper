@@ -69,7 +69,6 @@ bibliography: paper.bib
 ---
 # Summary
 
-A summary describing the high-level functionality and purpose of the software for a diverse, non-specialist audience
 In recent years the Robotics Operating System [@288] (ROS) has become the 'de facto' standard framework for the development of software in robotics. The idea of `ros_control` originates from the `pr2_controller_manager` framework with some ideas borrowed from OROCOS and serves for implementing and managing robot controllers with focus on both `real-time performance` and `sharing of controllers` in a robot-agnostic way. 
 The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. `ros_control` is out-of-the-box compatible with 3rd party software such as `MoveIt!` [@moveit],  the `ROS navigation stack`, Gazebo[@koenig2004design] and others.
 
@@ -86,6 +85,8 @@ The repository `ros_controllers` holds several ready-made controllers supporting
 Finally, `control_msgs` provides ROS messages used in most controllers offered in `ros_controllers`.
 
 `ros_control` was conceptualized by Sachin Chitta at Willow Garage Inc. and initial design and implementation was done by Sachin Chitta (then at Willow Garage), Wim Meussen, Vijay Pradeep and Eitan Marder-Epstein (then at HiDOF) before being released open-source.
+
+`ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization.
 
 # Robots using `ros_control`
 
