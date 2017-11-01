@@ -94,7 +94,7 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
 - NASA's humanoid and biped robots: Valkyrie & Robonaut [@hart2014robot, @badger2016ros]
 - Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
-- Clearpath Robotics' outdoor mobile robots: Husky, Jackal [@cpr_roscontrol]
+- Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr_roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
 - The quadruped robot HyQ-Real[@hyqreal] at Istituto Italiano di Tecnologia
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
