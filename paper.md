@@ -65,7 +65,6 @@ affiliations:
  - name: Willow Garage Inc. (at the time of this work)
    index: 11
 date: 31 October 2017
-date: 14 February 2016
 bibliography: paper.bib
 ---
 # Summary
@@ -85,6 +84,8 @@ Furthermore, `ros_control` ships software libraries addressing real-time ROS com
 The repository `ros_controllers` holds several ready-made controllers supporting the most common use-cases for manipulators, mobile and humanoid robots, e.g. a `joint_trajectory_controller` is heavily used with position-controlled robots to interface with MoveIt!.
 
 Finally, `control_msgs` provides ROS messages used in most controllers offered in `ros_controllers`.
+
+`ros_control` was conceptualized by Sachin Chitta at Willow Garage Inc. and initial design and implementation was done by Sachin Chitta (then at Willow Garage), Wim Meussen, Vijay Pradeep and Eitan Marder-Epstein (then at HiDOF) before being released open-source.
 
 # Robots using `ros_control`
 
