@@ -14,6 +14,9 @@ authors:
  - name: Sachin Chitta
    orcid: 0000-0003-4859-6096
    affiliation: 9, 11
+ - name: Eitan Marder-Eppstein
+   orcid: 0000-0003-0940-7117
+   affiliation: 1
  - name: Wim Meeussen
    orcid: 0000-0003-1905-4001
    affiliation: 1
