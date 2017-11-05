@@ -104,8 +104,5 @@ Being a mature framework, `ros_control` is widely applied to both production and
 ![ROS Control overview](images/ros_control_overview.png)
 
 The figures below highlight parts of the system in more detail and were made originally for the ROSCon2014 talk [@roscon_adolfo]. 
-![Overview](images/overview.svg)
-![Controllers overview](images/ros_control_interfaces.svg)
-![Control loop](images/control_loop.svg)
-![Controllers example](images/controllers.svg)
+![Overview](images/overview.png)
 
