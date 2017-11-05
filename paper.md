@@ -72,7 +72,6 @@ bibliography: paper.bib
 ---
 # Summary
 
-
 In recent years the Robotics Operating System [@288] (ROS) has become the 'de facto' standard framework for the development of software in robotics. The idea of `ros_control` originates from the PR2 robot's `pr2_controller_manager` framework with some ideas borrowed from OROCOS. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. 
 The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. `ros_control` is out-of-the-box compatible with 3rd party software such as `MoveIt!` [@moveit],  the `ROS navigation stack`, `Gazebo`[@koenig2004design] and others.
 
