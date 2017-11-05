@@ -34,7 +34,7 @@ authors:
    affiliation: 4, 2
  - name: Gennaro Raiola
    orcid: 0000-0003-1481-1106
-   affiliation: 5
+   affiliation: 5, 2
  - name: Mathias Lüdtke
    orcid: 0000-0002-1835-3854
    affiliation: 6
