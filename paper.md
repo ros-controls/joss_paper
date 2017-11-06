@@ -105,3 +105,5 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
 - The quadruped robot HyQ [@semini11hyqdesign] at Istituto Italiano di Tecnologia
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
+
+# References
