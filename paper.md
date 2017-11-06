@@ -89,7 +89,7 @@ Finally, `control_msgs` provides ROS messages used in most controllers offered i
 
 `ros_control` was conceptualized by Sachin Chitta at Willow Garage Inc. and initial design and implementation was done by Sachin Chitta (then at Willow Garage), Wim Meussen, Vijay Pradeep and Eitan Marder-Epstein (then at HiDOF) before being released open-source.
 
-`ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization. Documentation on behaviour, interfaces, doxygen-generated pages and tutorials can be found at [ros_control](http://wiki.ros.org/ros_control) and [ros_controllers](http://wiki.ros.org/ros_controllers).
+`ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization. Documentation on behaviour, interfaces, doxygen-generated pages and tutorials can be found at [ros_control](http://wiki.ros.org/ros_control) and [ros_controllers](http://wiki.ros.org/ros_controllers). For a thorough presentation we invite the interested reader to watch the talk given at ROSCon2014 [@roscon_adolfo].
 
 # Robots using `ros_control`
 
@@ -100,12 +100,10 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr_roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
 - The quadruped robot HyQ [@semini11hyqdesignjsce] at Istituto Italiano di Tecnologia
-- The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
+- The Twil robot at Federal University of Rio Grande do Sul [@lages2017parametric]
 
 
 # Figures for overview
-![ROS Control overview](images/ros_control_overview.png)
-
-The figures below highlight parts of the system in more detail and were made originally for the ROSCon2014 talk [@roscon_adolfo]. 
+![ROS Control overview](images/ros_control_overview.png) 
 ![Overview](images/overview.png)
 
