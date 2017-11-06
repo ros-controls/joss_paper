@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="overview.svg">
+   sodipodi:docname="overview.svg"
+   inkscape:export-filename="/tmp/joss_paper/images/overview.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,16 +26,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1406.7782"
-     inkscape:cy="889.82127"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="697.06939"
+     inkscape:cy="297.54171"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1167"
+     inkscape:window-height="1017"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -27128,7 +27131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27885,57 +27888,46 @@
        id="path12132-1-4"
        d="m 435.61827,880.70758 33.84011,0"
        style="fill:none;stroke:#333333;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <g
-       inkscape:export-ydpi="150"
-       inkscape:export-xdpi="150"
-       inkscape:export-filename="/home/adolfo/Documents/projects/ros_control/ros_control_big_picture_2.png"
-       transform="translate(3.0476953e-5,0)"
-       id="g17014">
-      <path
-         id="rect8069-38-7-4-7-6"
-         d="m 549.99999,1099.505 0,-35 -10,0 20,-45 20,45 -10,0 0,35 -20,0 z"
-         style="fill:#7c0303;fill-opacity:1;stroke:none"
-         inkscape:connector-curvature="0" />
-      <g
-         id="g17005"
-         transform="translate(4.5310059,0)">
-        <text
-           sodipodi:linespacing="125%"
-           id="text3791-4-6-6-8-5-6-7-7-1-5-7"
-           y="1131.8408"
-           x="293.01746"
-           style="font-style:normal;font-weight:normal;font-size:20.61829567px;line-height:125%;font-family:'Bitstream Vera Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none"
-           xml:space="preserve"><tspan
-             id="tspan3945"
-             y="1131.8408"
-             x="293.01746"
-             sodipodi:role="line"
-             style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1">- <tspan
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#7c0303;fill-opacity:1;stroke:none"
+       d="m 550.00002,1099.505 0,-35 -10,0 20,-45 20,45 -10,0 0,35 -20,0 z"
+       id="rect8069-38-7-4-7-6" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3791-4-6-6-8-5-6-7-7-1-5-7"
+       y="1131.8408"
+       x="297.54849"
+       style="font-style:normal;font-weight:normal;font-size:20.61829567px;line-height:125%;font-family:'Bitstream Vera Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan3945"
+         y="1131.8408"
+         x="297.54849"
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1">- <tspan
    style="font-weight:bold;fill:#333333;fill-opacity:1"
    id="tspan16881">Leverage</tspan> simulation backend</tspan><tspan
-             y="1157.6136"
-             x="293.01746"
-             sodipodi:role="line"
-             style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1"
-             id="tspan16879">- <tspan
-   style="font-weight:bold;fill:#333333;fill-opacity:1"
-   id="tspan16883">ROS-I</tspan> based hardware backend</tspan><tspan
-             y="1183.3866"
-             x="293.01746"
-             sodipodi:role="line"
-             style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1"
-             id="tspan16875" /></text>
-        <rect
-           ry="8.8881884"
-           rx="8.8881884"
-           y="1100.0952"
-           x="281.33884"
-           height="73.890999"
-           width="367.36465"
-           id="rect2985-7-6-9-7-8-0-9-7"
-           style="fill:none;stroke:#7c0303;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:15.77600002;stroke-opacity:1" />
-      </g>
-    </g>
+         y="1157.6136"
+         x="297.54849"
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1"
+         id="tspan16879">- <tspan
+   style="-inkscape-font-specification:'Bitstream Vera Sans Bold';font-family:'Bitstream Vera Sans';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan13023">Real robot</tspan> backends</tspan><tspan
+         y="1183.3866"
+         x="297.54849"
+         sodipodi:role="line"
+         style="text-align:start;text-anchor:start;fill:#333333;fill-opacity:1"
+         id="tspan16875" /></text>
+    <rect
+       ry="8.8881884"
+       rx="8.8881884"
+       y="1100.0952"
+       x="285.86987"
+       height="73.890999"
+       width="367.36465"
+       id="rect2985-7-6-9-7-8-0-9-7"
+       style="fill:none;stroke:#7c0303;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:15.77600002;stroke-opacity:1" />
     <g
        inkscape:export-ydpi="150"
        inkscape:export-xdpi="150"
