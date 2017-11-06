@@ -72,7 +72,7 @@ bibliography: paper.bib
 ---
 # Summary
 
-In recent years the Robotics Operating System [@288] (ROS) has become the 'de facto' standard framework for the development of software in robotics. The idea of `ros_control` originates from the PR2 robot's `pr2_controller_manager` framework with some ideas borrowed from OROCOS. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. 
+In recent years the Robotics Operating System [@quigley2009ros] (ROS) has become the 'de facto' standard framework for the development of software in robotics. The idea of `ros_control` originates from the PR2 robot's `pr2_controller_manager` framework with some ideas borrowed from OROCOS. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. 
 The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. `ros_control` is out-of-the-box compatible with 3rd party software such as `MoveIt!` [@moveit],  the `ROS navigation stack`, `Gazebo`[@koenig2004design] and others.
 
 The backbone of the framework is the Hardware Abstraction Layer, which serves as a bridge to different simulated and real robots. This abstraction is provided by the `hardware_interface::RobotHW` class; specific robot implementations have to inherit from this class.  Instances of this class are then used to interface the robot hardware (including some low-level sensors) to higher-level controllers. This allows higher-level controllers to be hardware-agnostic and easily shareable.
@@ -93,7 +93,7 @@ Finally, `control_msgs` provides ROS messages used in most controllers offered i
 
 `ros_control` was conceptualized by Sachin Chitta at Willow Garage Inc. and initial design and implementation was done by Sachin Chitta (then at Willow Garage), Wim Meussen, Vijay Pradeep and Eitan Marder-Epstein (then at HiDOF) before being released open-source.
 
-`ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization. Documentation on behaviour, interfaces, doxygen-generated pages and tutorials can be found at [ros_control](http://wiki.ros.org/ros_control) and [ros_controllers](http://wiki.ros.org/ros_controllers). For a thorough presentation we invite the interested reader to watch the talk given at ROSCon2014 [@roscon_adolfo].
+`ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization. Documentation on behaviour, interfaces, doxygen-generated pages and tutorials can be found at [ros_control](http://wiki.ros.org/ros_control) and [ros_controllers](http://wiki.ros.org/ros_controllers). For a thorough presentation we invite the interested reader to watch the talk given at ROSCon2014 [@rodriguez2014roscon].
 
 # Robots using `ros_control`
 
@@ -101,7 +101,7 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
 - NASA's humanoid and biped robots: Valkyrie & Robonaut [@hart2014robot, @badger2016ros]
 - Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
-- Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr_roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
+- Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
-- The quadruped robot HyQ [@semini11hyqdesignjsce] at Istituto Italiano di Tecnologia
-- The Twil robot at Federal University of Rio Grande do Sul [@lages2017parametric]
+- The quadruped robot HyQ [@semini11hyqdesign] at Istituto Italiano di Tecnologia
+- The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
