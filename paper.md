@@ -103,7 +103,7 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
-- The quadruped robot HyQ [@semini11hyqdesign] at Istituto Italiano di Tecnologia
+- The quadruped robots HyQ and HyQ2Max [@semini11hyqdesign, @semini2017design] at Istituto Italiano di Tecnologia
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
 
 # References
