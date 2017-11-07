@@ -99,7 +99,7 @@ Finally, `control_msgs` provides ROS messages used in most controllers offered i
 
 Being a mature framework, `ros_control` is widely applied to both production and research platform robots. A few examples where the control system is implemented with `ros_control` are:
 - PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
-- NASA's humanoid and biped robots: Valkyrie & Robonaut [@hart2014robot, @badger2016ros]
+- NASA's humanoid and biped robots: Valkyrie & Robonaut [@radford2015valkyrie, @hart2014robot, @badger2016ros]
 - Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
