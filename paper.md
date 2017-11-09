@@ -107,5 +107,6 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
 
 ![Robots montage](images/ros_control_montage.jpg)
+Robot names and credits in order of appearance: Valkyrie (Photo by NASA / Bill Stafford), Husky (Photo by Clearpath Robotics), OTTO (Photo by Otto Motors), TIAGo (Photo by PAL Robotics), Dexterous Hand (Photo by Shadow Robot), HyQ2Max (Photo by Istituto Italiano di Tecnologia), TALOS (Photo by PAL Robotics)
 
 # References
