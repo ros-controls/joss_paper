@@ -25,7 +25,7 @@ authors:
    affiliation: 1
  - name: Adolfo Rodríguez Tsouroukdissian
    orcid: 0000-0002-3075-1329
-   affiliation: 2
+   affiliation: 12, 2
  - name: Jonathan Bohren
    orcid: 0000-0003-4568-6352
    affiliation: 8,10
@@ -67,6 +67,8 @@ affiliations:
    index: 10
  - name: Willow Garage Inc. (at the time of this work)
    index: 11
+ - name: Pick-it NV
+   index: 12
 date: 31 October 2017
 bibliography: paper.bib
 ---
