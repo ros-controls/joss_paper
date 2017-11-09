@@ -76,7 +76,7 @@ bibliography: paper.bib
 
 In recent years the Robotics Operating System [@quigley2009ros] (ROS) has become the 'de facto' standard framework for robotics software development. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. The primary motivation for a sepate robot-control framework is the lack of realtime-safe communication layer in ROS. Furthermore, the framework implements solutions for controller-lifecycle and hardware resource management as well as abstractions on hardware interfaces with minimal assumptions on hardware or operating system. The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. The idea of `ros_control` originates from the `pr2_controller_manager` framework specific to the PR2 robot but `ros_control` is fully robot-agnostic. Controllers expose standard ROS interfaces for out-of-the box 3rd party solutions to robotics problems like manipulation path planning (`MoveIt!` [@chitta2012moveit]) and autonomous navigation (the `ROS navigation stack`). `ros_control` also provides several libraries to support writing custom controllers.
 <!-- with some ideas borrowed from OROCOS [@bruyninckx2001open].  -->
-# Packages And Functionalities
+# Packages and functionalities
 
 The backbone of the framework is the Hardware Abstraction Layer, which serves as a bridge to different simulated and real robots. This abstraction is provided by the `hardware_interface::RobotHW` class; specific robot implementations have to inherit from this class. Instances of this class model hardware resources provided by the robot such as electric and hydraulic actuators and low-level sensors such as encoders and force/torque sensors. It also allows for mix and match heterogeneous hardware or swap out components transparently whether it is a real or simulated robot. Controllers are also hardware-agnostic. They specify required hardware resources to be able to operate. 
 
@@ -96,7 +96,7 @@ The repository `ros_controllers` holds several ready-made controllers supporting
 
 `ros_control` is released as binary packages with each new version of ROS, source code is hosted at the [ros-controls](https://github.com/ros-controls) Github organization. Documentation on behaviour, interfaces, doxygen-generated pages and tutorials can be found at [ros_control](http://wiki.ros.org/ros_control) and [ros_controllers](http://wiki.ros.org/ros_controllers). For a thorough presentation we invite the interested reader to watch the talk given at ROSCon2014 [@rodriguez2014roscon].
 
-# Robots Using `ros_control`
+# Robots using `ros_control`
 
 Being a mature framework, `ros_control` is widely applied to both production and research platform robots. A few examples where the control system is implemented with `ros_control` are:
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
