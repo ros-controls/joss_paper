@@ -25,7 +25,7 @@ authors:
    affiliation: 1
  - name: Adolfo Rodríguez Tsouroukdissian
    orcid: 0000-0002-3075-1329
-   affiliation: 2
+   affiliation: 12, 2
  - name: Jonathan Bohren
    orcid: 0000-0003-4568-6352
    affiliation: 8,10
@@ -67,25 +67,27 @@ affiliations:
    index: 10
  - name: Willow Garage Inc. (at the time of this work)
    index: 11
+ - name: Pick-it NV
+   index: 12
 date: 31 October 2017
 bibliography: paper.bib
 ---
 # Summary
 
-In recent years the Robotics Operating System [@quigley2009ros] (ROS) has become the 'de facto' standard framework for the development of software in robotics. The idea of `ros_control` originates from the PR2 robot's `pr2_controller_manager` framework with some ideas borrowed from OROCOS [@bruyninckx2001open]. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. 
-The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. `ros_control` is out-of-the-box compatible with 3rd party software such as `MoveIt!` [@chitta2012moveit],  the `ROS navigation stack`, `Gazebo`[@koenig2004design] and others.
+In recent years the Robotics Operating System [@quigley2009ros] (ROS) has become the 'de facto' standard framework for robotics software development. The `ros_control` framework provides the capability to implement and manage robot controllers with a focus on both _real-time performance_ and _sharing of controllers_ in a robot-agnostic way. The primary motivation for a sepate robot-control framework is the lack of realtime-safe communication layer in ROS. Furthermore, the framework implements solutions for controller-lifecycle and hardware resource management as well as abstractions on hardware interfaces with minimal assumptions on hardware or operating system. The clear, modular design of `ros_control` makes it ideal for both research and industrial use and has indeed seen many such applications to date. The idea of `ros_control` originates from the `pr2_controller_manager` framework specific to the PR2 robot but `ros_control` is fully robot-agnostic. Controllers _expose standard ROS interfaces_ for out-of-the box 3rd party solutions to robotics problems like manipulation path planning (`MoveIt!` [@chitta2012moveit]) and autonomous navigation (the `ROS navigation stack`). `ros_control` also provides several libraries to support writing custom controllers.
+<!-- with some ideas borrowed from OROCOS [@bruyninckx2001open].  -->
 
-The backbone of the framework is the Hardware Abstraction Layer, which serves as a bridge to different simulated and real robots. This abstraction is provided by the `hardware_interface::RobotHW` class; specific robot implementations have to inherit from this class.  Instances of this class are then used to interface the robot hardware (including some low-level sensors) to higher-level controllers. This allows higher-level controllers to be hardware-agnostic and easily shareable.
+The backbone of the framework is the Hardware Abstraction Layer, which serves as a bridge to different simulated and real robots. This abstraction is provided by the `hardware_interface::RobotHW` class; specific robot implementations have to inherit from this class. Instances of this class model hardware resources provided by the robot such as electric and hydraulic actuators and low-level sensors such as encoders and force/torque sensors. It also allows for mix and match heterogeneous hardware or swap out components transparently whether it is a real or simulated robot. Controllers are also hardware-agnostic. They specify required hardware resources to be able to operate. 
 
 ![ROS Control overview](images/ros_control_overview.png) 
 
-There is a possibility for composing already implemented `RobotHW` instances through the `CombinedRobotHW` class. The latter is ideal for constructing control systems for robots where parts come from different suppliers, each supplying their own specific `RobotHW` instance. The rest of the `hardware_interface` package defines read-only or read-write typed joint and actuator interfaces for abstracting hardware away. Through these typed interfaces this abstraction enables easy introspection and increases maintainability.
+There is a possibility for composing already implemented `RobotHW` instances which is ideal for constructing control systems for robots where parts come from different suppliers, each supplying their own specific `RobotHW` instance. The rest of the `hardware_interface` package defines read-only or read-write typed joint and actuator interfaces for abstracting hardware away, eg: state, position, velocity and effort interfaces. Through these typed interfaces this abstraction enables easy introspection and increases maintainability.
 
-The `controller_manager` is responsible for managing the lifecycle of controllers, and hardware resources through the interfaces and handling resource conflicts between controllers. It provides a standard `ROS service`-based interface for controller lifecycle management and queries.
+The `controller_manager` is responsible for managing the lifecycle of controllers, and hardware resources through the interfaces and handling resource conflicts between controllers. The lifecycle of controllers is not static. It can be queried and modified at runtime through standard `ROS services` provided by the `controller_manager`: start, stop, configure, etc...
 
 ![Overview](images/overview.png)
 
-Furthermore, `ros_control` ships software libraries addressing real-time ROS communication, transmissions and joint limits. The `realtime_tools` library adds utility classes handling ROS communications in a realtime-safe way. The `transmission_interface` package supplies classes implementing joint- and actuator-space conversions such as: simple reducer, four-bar linkage and differential transmissions. A declarative definition of transmissions is supported directly within the robot's URDF [@garage2009universal]. The `joint_limits_interface` package contains data structures for representing joint limits, methods to populate them through URDF or yaml files and methods to enforce these limits. `control_toolbox` offers components useful when writing controllers: a PID controller class, smoothers, sine-wave and noise generators. 
+Furthermore, `ros_control` ships software libraries addressing real-time ROS communication, transmissions and joint limits. The `realtime_tools` library adds utility classes handling ROS communications in a realtime-safe way. The `transmission_interface` package supplies classes implementing joint- and actuator-space conversions such as: simple reducer, four-bar linkage and differential transmissions. A declarative definition of transmissions is supported directly with the kinematics and dynamics description in the robot's Universal Robot Description Format (URDF) [@garage2009universal] file. The `joint_limits_interface` package contains data structures for representing joint limits, methods to populate them through URDF or yaml files and methods to enforce these limits. `control_toolbox` offers components useful when writing controllers: a PID controller class, smoothers, sine-wave and noise generators. 
 
 The repository `ros_controllers` holds several ready-made controllers supporting the most common use-cases for manipulators, mobile and humanoid robots, e.g. a `joint_trajectory_controller` is heavily used with position-controlled robots to interface with MoveIt!.
 
@@ -98,12 +100,12 @@ Finally, `control_msgs` provides ROS messages used in most controllers offered i
 # Robots using `ros_control`
 
 Being a mature framework, `ros_control` is widely applied to both production and research platform robots. A few examples where the control system is implemented with `ros_control` are:
-- PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
-- NASA's humanoid and biped robots: Valkyrie & Robonaut [@radford2015valkyrie, @hart2014robot, @badger2016ros]
-- Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
-- Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
-- The quadruped robots HyQ and HyQ2Max [@semini11hyqdesign, @semini2017design] at Istituto Italiano di Tecnologia
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
+- The quadruped robots HyQ and HyQ2Max [@semini11hyqdesign, @semini2017design] at Istituto Italiano di Tecnologia
+- NASA's humanoid and biped robots: Valkyrie & Robonaut [@radford2015valkyrie, @hart2014robot, @badger2016ros]
+- PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
+- Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
+- Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
 
 # References
