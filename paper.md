@@ -106,4 +106,6 @@ Being a mature framework, `ros_control` is widely applied to both production and
 - The quadruped robots HyQ and HyQ2Max [@semini11hyqdesign, @semini2017design] at Istituto Italiano di Tecnologia
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
 
+![Robots montage](images/ros_control_montage.jpg)
+
 # References
