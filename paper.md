@@ -28,7 +28,7 @@ authors:
    affiliation: 12, 2
  - name: Jonathan Bohren
    orcid: 0000-0003-4568-6352
-   affiliation: 8,10
+   affiliation: 8, 10
  - name: David Coleman
    orcid: 0000-0001-6112-1795
    affiliation: 3, 11
