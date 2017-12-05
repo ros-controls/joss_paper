@@ -87,9 +87,9 @@ There is a possibility for composing already implemented `RobotHW` instances whi
 
 The `controller_manager` is responsible for managing the lifecycle of controllers, and hardware resources through the interfaces and handling resource conflicts between controllers. The lifecycle of controllers is not static. It can be queried and modified at runtime through standard `ROS services` provided by the `controller_manager`. Such services allow to start, stop and configure controllers at runtime.
 
-![ROS Control overview](images/ros_control_overview.png) 
+![ROS Control overview](images/ros_control_overview.png)
 
-Furthermore, `ros_control` ships software libraries addressing real-time ROS communication, transmissions and joint limits. The `realtime_tools` library adds utility classes handling ROS communications in a realtime-safe way. The `transmission_interface` package supplies classes implementing joint- and actuator-space conversions such as: simple reducer, four-bar linkage and differential transmissions. A declarative definition of transmissions is supported directly with the kinematics and dynamics description in the robot's Universal Robot Description Format (URDF) [@garage2009universal] file. The `joint_limits_interface` package contains data structures for representing joint limits, methods to populate them through URDF or yaml files and methods to enforce these limits. `control_toolbox` offers components useful when writing controllers: a PID controller class, smoothers, sine-wave and noise generators. 
+Furthermore, `ros_control` ships software libraries addressing real-time ROS communication, transmissions and joint limits. The `realtime_tools` library adds utility classes handling ROS communications in a realtime-safe way. The `transmission_interface` package supplies classes implementing joint- and actuator-space conversions such as: simple reducer, four-bar linkage and differential transmissions. A declarative definition of transmissions is supported directly with the kinematics and dynamics description in the robot's Universal Robot Description Format (URDF) [@garage2009universal] file. The `joint_limits_interface` package contains data structures for representing joint limits, methods to populate them through URDF or yaml files and methods to enforce these limits. `control_toolbox` offers components useful when writing controllers: a PID controller class, smoothers, sine-wave and noise generators.
 
 The repository `ros_controllers` holds several ready-made controllers supporting the most common use-cases for manipulators, mobile and humanoid robots, e.g. the `joint_trajectory_controller` is heavily used with position-controlled robots to interface with MoveIt!. Finally, `control_msgs` provides ROS messages used in most controllers offered in `ros_controllers`.
 
@@ -100,11 +100,12 @@ The repository `ros_controllers` holds several ready-made controllers supporting
 # Robots using `ros_control`
 
 Being a mature framework, `ros_control` is widely applied to both production and research platform robots. A few examples where the control system is implemented with `ros_control` are:
+
 - Clearpath Robotics' outdoor mobile robots: Grizzly, Husky, Jackal [@cpr2017roscontrol], and OTTO Motors' industrial indoor mobile robots: OTTO 1500, OTTO 100
 - The "Twil" robot at Federal University of Rio Grande do Sul [@lages2017parametric]
 - The quadruped robots HyQ and HyQ2Max [@semini11hyqdesign, @semini2017design] at Istituto Italiano di Tecnologia
 - NASA's humanoid and biped robots: Valkyrie & Robonaut [@ROB:ROB21560, @hart2014robot, @badger2016ros]
-- PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos] 
+- PAL Robotics' humanoid, biped and mobile robots: REEM, REEM-C, PMB2, Tiago and Talos [@stasse2017talos]
 - Shadow Robot's anthropomorphic, highly sensorized and precise Shadow Hand [@meier2016distinguishing]
 - Universal Robots' industrial arms: UR3, UR5 [@andersen2015optimizing]
 
